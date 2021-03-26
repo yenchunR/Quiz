@@ -1,10 +1,18 @@
 <html> 
     <head>
-        <title>My Document</title>   
-        <script type="text/javascript" src="./quiz1.js"></script> 
+        <title>My Document</title>  
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+        <script type="text/javascript">   
+        function change() {  
+            var header = $("#H1");
+            header.html("CSIE@CGU");  
+            var para = $("#P");
+            para.html("怎麼那麼棒！！.")   
+        }   
+        </script> 
     </head> 
-    <body>  
-        <button onclick="myFunction()">Try it</button>
+    <body>   
+        <input type="button" value="Change this document." onclick="change()">   
         <h1 id="H1">CGU</h1>   
         <p id="P">好棒棒</p> 
     </body> 
